@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/prestamo.css">
+    <link rel="stylesheet" href="assets/css/prestamo.css">
     <title>Generar nuevo prestamo</title>
 </head>
 <body>
@@ -17,10 +17,9 @@
             </div>
         </header>
 
-        <form action="" method="POST" class="contenido">
-            Ingresa el numero de cuenta del usuario:
-            <input type="text" class="input1" name="nombre" placeholder="Nombre">
-
+        <form action="src/prestamo.php" method="POST" class="contenido">
+            Ingresa la curp el usuario:
+            <input type="text" class="input1" name="curp" placeholder="Curp">
             Ingresa el monton del prestamo que desea:
             <input type="text" class="input1" name="monto" placeholder="$0.00">
             Ingresa el plazo a pagar del prestamo:

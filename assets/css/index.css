@@ -1,0 +1,321 @@
+
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* globales*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: #747e74;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+   max-width: 100%;
+   }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+} 
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #06993e;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(1, 1, 6);
+    margin: 0;
+}
+span{
+    display: contents;
+    color: #34ca6d;
+}
+/* contenido de los botones*/
+.main-btn{
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 55px;
+    border:  2px solid #08ef64;
+    border-radius: 5px;
+    background-color: #08ef59;
+    color: #fff;
+}
+.main-btn:hover{
+    background-color: rgb(8, 152, .7);
+    color: #fff;
+    border-color: transparent;
+}
+
+/*----toda la animacion-----*/
+@keyframes video {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.4);
+        opacity: 0 ;
+    }
+}
+@keyframes bounceTop-1 {
+    0%,100% {
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+/*animacion de los circulos */
+@keyframes animation-1 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes animation-2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*  ---navbar---  */
+.navbar-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+.navbar {
+    position: relative;
+    padding: 20px 0;
+}
+.navbar-brand .image {
+ max-width: 80px;
+}
+
+.navbar-nav .nav-item{
+    position: relative;
+    margin-left: 40px;
+} 
+
+.navbar-nav .nav-item .nav-link  {
+    position: relative;
+    padding:  10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color:  #f8fafc;
+} /*posicion y tamaño de los menus principales*/
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover{
+ color: rgb(30, 212, 2);
+}
+
+/*diseño del cuadro gris del menú */
+.navbar-nav .nav-item .nav-link::before{
+    content: '';
+    position: absolute;
+    width: 100%;  /*anchura*/
+    height: 2px; /*altura */
+    bottom: 0;
+    left: 0%;
+    border-radius: 10%; /* diseño de lo esquineado */
+    background-color: #d51cd5;
+    opacity: 0; /* desaparece el cuadro gris*/
+    transition: all 1.3s ease-out 0s;
+}
+
+/* aparece el cuadro gris al pasar el cursor*/
+.navbar-nav .nav-item .nav-link.active::before,
+.navbar-nav .nav-item .nav-link:hover:before{
+ opacity: 1;
+}
+/* css */
+.header-hero{
+   position: relative;
+   top: 0;
+   height: 800px;
+   background-position: bottom center;
+}
+/* animacion de fondo circulos*/
+.header-hero .shape{
+    position: absolute;
+}
+
+.header-hero .shape.shape-1{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    left: 5%;
+    top: 5%;
+    border-radius: 50%;
+    background: #637ae4;
+    animation: animation-1 2s linear infinite;
+}
+.header-hero .shape.shape-2{
+    width: 55px;
+    height: 55px;
+    left: 20%;
+    bottom: 90px;
+    border-radius: 50%;
+    background: #e220ec;
+    animation: animation-2 3s linear infinite;
+}
+.header-hero .shape.shape-3{
+    width: 6%;
+    height: 11%;
+    left: 40%;
+    bottom: 25%;
+    border-radius: 50%;
+    background: #20ec2a;
+    animation: animation-1 2s linear infinite; 
+}
+.header-hero .shape.shape-4{
+    width: 4%;
+    height: 6.7%;
+    left: 40%;
+    top: 20%;
+    border-radius: 50%;
+    background: #20ec2a;
+    animation: animation-2 3s linear infinite; 
+}
+.header-hero .shape.shape-5{
+    width: 5%;
+    height: 9%;
+    left: 3%;
+    bottom: 14%;
+    border-radius: 50%;
+    background: #20ec2a;
+    animation: animation-1 2s linear infinite;
+}
+.header-hero .shape.shape-6{
+    width: 5%;
+    height: 9%;
+    left: 25%;
+    top: 14%;
+    border-radius: 50%;
+    background: #d0690e;
+    animation: animation-2 3s linear infinite; 
+}
+
+.header-hero-content{
+    position: relative;
+    margin-top: 150px;
+}
+/* color del subtitulo*/
+.header-hero-content .header-title{
+    font-size: 42px;
+    color: #06993e;
+}
+
+.header-hero-content .text{
+    margin-top: 30px;
+}
+
+.header-hero-content ul{
+    margin-top: 30px;
+}
+/* inicia el area del boton del video*/
+.header-hero-content ul li .header-video{
+    margin-left: 50px;
+}
+
+.header-hero-content .header-video{
+    position: relative;
+    margin-top: 6px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18x;
+    border-radius: 50%;
+    background-color: #08ef64;
+    color: #fff;
+}
+
+.header-hero-content .header-video::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(21, 219, 77, 0.8);
+    z-index: -9;
+    animation: video 2s linear infinite;
+}
+
+.header-image {
+    position: relative;
+    padding-top: 80px;  
+    animation: bounceTop-1 3s ease infinite; /* el tiempo que dura la imagen en movimiento */
+}
+/* estilo del fondo*/
+.header-shape-1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-image: url(../img/header-shape-1.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.header-shape-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
