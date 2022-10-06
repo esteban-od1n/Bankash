@@ -3,8 +3,8 @@ $con = Database::connect();
 
 
     $sql = "SELECT * FROM cliente";
-    $query=mysqli_query($con,$sql);
-    $row=mysqli_fetch_array($query);
+    $query=$con->query($sql);
+    $row=$query->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -13,8 +13,8 @@ $con = Database::connect();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta id="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" class="rel">
-    <link rel="stylesheet" href="../assets/css/crud.css" class="rel">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" class="rel">
+    <link rel="stylesheet" href="../../assets/css/crud.css" class="rel">
     <title>CRUD</title>
 </head>
 <body>
@@ -112,7 +112,7 @@ $con = Database::connect();
              <tbody>
                 <?php 
                 //consulta y genere cada uno de los campos
-                while($row=mysqli_fetch_array($query)){ 
+                while($row=$query->fetch(PDO::FETCH_ASSOC)){ 
                 ?>
                 <tr>
                 <th><?php echo $row['id_cliente']?></th>
