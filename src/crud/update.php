@@ -1,5 +1,5 @@
 <?php
-    require "conexion.php";
+    require "../conexion.php";
     $con = Database::connect();
 
     $id_cliente = (isset($_POST['id_cliente'])) ? $_POST['id_cliente'] : '';
@@ -16,7 +16,7 @@
         //UPDATE es para editar en los campos de la base de datos que donde (WHERE) estan el id seleccionado
     $sql="UPDATE cliente SET apellido_paterno='$apellido_paterno', apellido_materno='$apellido_materno', edad='$edad', genero='$genero', 
     curp='$curp', colonia='$colonia', estado='$estado', municipio='$municipio', email='$email' WHERE id_cliente='$id_cliente'";
-    $query=mysqli_query($conexion,$sql);
+    $query=$con->query($sql);
 
     if($query){
         header("crud.php");
