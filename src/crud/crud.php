@@ -4,7 +4,7 @@ $con = Database::connect();
 
     $sql = "SELECT * FROM cliente";
     $query=$con->query($sql);
-    $row=$query->fetch(PDO::FETCH_ASSOC);
+    $row=$query->fetch(PDO::FETCH_ASSOC); 
 ?>
 
 <!DOCTYPE html>
