@@ -1,15 +1,15 @@
 <?php
-    include("../conexion.php");
-    $conexion=conectar();
+    require_once "../conexion.php";
+    $con = Database::connect();
   
     $id_cliente = $_GET['id_cliente'];
 
-    $con ="SELECT * FROM cliente WHERE id_cleinte='$id_cliente'";
-    $query=mysqli_connect($conexion,$con);
+    $sql ="SELECT * FROM cliente WHERE id_cleinte='$id_cliente'";
+    $query=$con->query($sql);
 
-    $row=mysqli_fetch_array($query);
+    $row=$query->fetch(PDO::FETCH_ASSOC);
 ?>
-<!DOCTYPE html>
+<!DOCTYPE html>     
 <html lang="en">
 <head>
     <meta charset="UTF-8">
