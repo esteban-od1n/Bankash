@@ -4,9 +4,9 @@
 
     if(isset($_POST['enviar_datos'])){
     $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
-    $apellido_paterno =  (isset($_POST['apellido_paterno'])) ? $_POST['apellido_paterno'] : '';;
+    $apellido_paterno =  (isset($_POST['apellido_paterno'])) ? $_POST['apellido_paterno'] : '';
     $apellido_materno =  (isset($_POST['apellido_materno'])) ? $_POST['apellido_materno'] : '';
-    $edad =  (isset($_POST['edad'])) ? $_POST['edad'] : '';;
+    $edad =  (isset($_POST['edad'])) ? $_POST['edad'] : '';
     $genero = (isset($_POST['genero'])) ? $_POST['genero'] : '';
     $curp =  (isset($_POST['curp'])) ? $_POST['curp'] : '';
     $colonia =  (isset($_POST['colonia'])) ? $_POST['colonia'] : '';
@@ -25,6 +25,7 @@
     echo 'error';
 }
 ?>
+
 
 
 
