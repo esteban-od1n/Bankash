@@ -4,7 +4,7 @@
   
     $id_cliente = $_GET['id_cliente'];
 
-    $sql ="SELECT * FROM cliente WHERE id_cleinte='$id_cliente'";
+    $sql ="SELECT * FROM cliente WHERE id_cliente='$id_cliente'";
     $query=$con->query($sql);
 
     $row=$query->fetch(PDO::FETCH_ASSOC);
@@ -15,9 +15,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" class="rel">
     <title>Actualizar</title>
 </head>
 <body>
-    
+    <div class="container mt-5">
+        <form action="update.php" method="POST">
+                <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
+                <input type="text" class="form-control mb-3" name="apellido_paterno" placeholder="Nombre">
+                <input type="text" class="form-control mb-3" name="apellido_materno" placeholder="Nombre">
+                <input type="text" class="form-control mb-3" name="edad" placeholder="Nombre">
+                <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1" class="col-form-label">sexo</label>
+                                <select class="form-control mb-3" name="genero" required>
+                                <option></option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                </select>
+                            </div>
+                       </div>
+                    </div>
+                <input type="text" class="form-control mb-3" name="curp" placeholder="Nombre">
+                <input type="text" class="form-control mb-3" name="colonia" placeholder="Nombre">
+                <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1" class="col-form-label">Estado</label>
+                                <select class="form-control mb-3" name="estado" required>
+                                    <option></option>
+                                    <option>AGUASCALIENTES</option>
+                                    <option>BAJA CALIFORNIA</option>
+                                    <option>BAJA CALIFORNIA SUR</option>
+                                    <option>CAMPECHE</option>
+                                    <option>COAHUILA</option>
+                                    <option>COLIMA</option>
+                                    <option>CHIAPAS</option>
+                                    <option>CHIHUAHUA</option>
+                                    <option>DURANGO</option>
+                                    <option>ESTADO DE MÉXICO</option>
+                                    <option>GUANAJUATO</option>
+                                    <option>GUERRERO</option>
+                                    <option>HIDALGO</option>
+                                    <option>JALISCO</option>
+                                    <option>CIUDAD DE MÉXICO</option>
+                                    <option>MICHOACÁN</option>
+                                    <option>MORELOS</option>
+                                    <option>NAYARIT</option>
+                                    <option>NUEVO LEÓN</option>
+                                    <option>OAXACA</option>
+                                    <option>PUEBLA</option>
+                                    <option>QUERÉTARO</option>
+                                    <option>QUINTANA ROO</option>
+                                    <option>SAN LUIS POTOSÍ</option>
+                                    <option>SINALOA</option>
+                                    <option>SONORA</option>
+                                    <option>TABASCO</option>
+                                    <option>TAMAULIPAS</option>
+                                    <option>TLAXCALA</option>
+                                    <option>VERACRUZ</option>
+                                    <option>YUCATÁN</option>
+                                    <option>ZACATECAS</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                <input type="text" class="form-control mb-3" name="municipio" placeholder="Municipio">
+                <input type="text" class="form-control mb-3" name="email" placeholder="Gmail">
+        </form>
+    </div>
+
+
+
+<sript src="../assets/js/bootstrap.min.js"></sript>
 </body>
 </html>
