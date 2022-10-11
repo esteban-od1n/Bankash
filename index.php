@@ -35,8 +35,8 @@
                         <div class="dropdown">
                             <a class="nav-link" data-scroll-nav="1">Iniciar sesión</a>
                             <div class="dropdown-content">
-                                <a href="login-cliente.html">Cliente</a>
-                                <a href="login.html">Ejecutivo</a>
+                                <a href="login-cliente.php">Cliente</a>
+                                <a href="login.php">Ejecutivo</a>
                             </div>
                         </div>
                     </li>

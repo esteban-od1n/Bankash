@@ -15,7 +15,7 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="src/login.php" method="post" class="sign-in-form">
+          <form action="src/loginex.php" method="post" class="sign-in-form">
             <h2 class="title">Inicia sesión</h2>
             <div class="input-field">
               <i class="fa-regular fa-user"></i>
@@ -26,9 +26,8 @@
               <input type="password" name="password" placeholder="Contraseña" />
             </div>
             <input type="submit" value="Iniciar sesión" class="btn solid" />
-            <p class="social-text">Siguenos en nuestras redes sociales </p>
             <div class="social-media">
-              <a href="../index.html" class="social-icon">
+              <a href="../index.php" class="social-icon">
                 <i class="fa-solid fa-house"></i>
               </a>
             </div>
@@ -50,15 +49,8 @@
         </div>
         <div class="panel right-panel">
           <div class="content">
-            <h3>Registrate</h3>
-            <p>
-            Hola, espero que encuentres lo que necesitas en nuestra aplicacion web, solo rellenas los campos para que inicies sesión y listo =)
-            </p>
-              <button class="btn transparent" id="sign-in-btn">
-                <p>Inicia sesión</p>
             </form>
           </div>
-          <img src="assets/img/bankash.png" class="image" alt="" />
         </div>
       </div>
     </div>
