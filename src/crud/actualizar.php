@@ -35,7 +35,8 @@
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1" class="col-form-label">sexo:</label>
                                 <select class="form-control mb-3" name="genero" required>
-                                <option></option value="<?php echo $row['genero'] ?>">
+                                <option><?php echo $row['genero'] ?></option value="<?php echo $row['genero'] ?>">
+                                <option value=""></option>
                                 <option>Masculino</option>
                                 <option>Femenino</option>
                                 <option></option>
