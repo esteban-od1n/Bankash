@@ -21,6 +21,7 @@
 <body>
     <div class="container mt-5"> 
     <form action="update.php" method="POST"><!--en name es necesario colocar el mismo nombre que en la base de datos-->
+                    <input type="hidden" name="id_cliente" value="<?php echo $row['id_cliente'] ?>">
                     <label for="exampleFormControlSelect1" class="col-form-label">Nombre:</label>
                     <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre" required value="<?php echo $row['nombre'] ?>">
                     <label for="exampleFormControlSelect1" class="col-form-label">Apellido Paterno:</label>

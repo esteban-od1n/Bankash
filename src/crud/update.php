@@ -4,7 +4,6 @@
 
     if(isset($_POST['mod_datos'])){
         $id_cliente = (isset($_POST['id_cliente'])) ? $_POST['id_cliente'] : '';
-        echo $id_cliente;
         $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
 
         $apellido_paterno =  (isset($_POST['apellido_paterno'])) ? $_POST['apellido_paterno'] : '';
@@ -24,14 +23,14 @@
         $municipio =  (isset($_POST['municipio'])) ? $_POST['municipio'] : '';
 
         $email =  (isset($_POST['email'])) ? $_POST['email'] : '';
-        //UPDATE es para editar en los campos de la base de datos que donde (WHERE) estan el id seleccionado
-        $actualizar="UPDATE cliente SET nombre='$nombre', apellido_paterno='$apellido_paterno', apellido_materno='$apellido_materno', edad='$edad', genero='$genero', 
+        //UPDATE es para editar en los campos de la base de datos que donde (WHERE) estan el id seleccionado en la parte de edad no es necesario agregar las comillas simplre ya que es un valor entero 
+        $actualizar="UPDATE cliente SET nombre='$nombre', apellido_paterno='$apellido_paterno', apellido_materno='$apellido_materno', edad=$edad , genero='$genero', 
         curp='$curp', colonia='$colonia', estado='$estado', municipio='$municipio', email='$email' WHERE id_cliente='$id_cliente'";
     
     $query=$con->query($actualizar);
 
     if($query){
-        header("src/crud/crud.php");
+        header("crud.php");
     }
 }else{
     echo'error';
