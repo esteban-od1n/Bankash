@@ -18,7 +18,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 
     $message = '';
        //if ($results && count($results) > 0 && password_verify($_POST['password'], $results['password']) (solo cuando hayas hasheado la password en el link viene que hasheo necesita)
-    if ($results && count($results) > 0) {
+    if ($results && count($results) > 0 ) {
     $_SESSION['user_id'] = $results['id_cliente'];
     header('Location: ../executive-page.php');
     die; 

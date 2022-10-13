@@ -13,13 +13,14 @@
     $estado =  (isset($_POST['estado'])) ? $_POST['estado'] : '';
     $municipio =  (isset($_POST['municipio'])) ? $_POST['municipio'] : '';
     $email =  (isset($_POST['email'])) ? $_POST['email'] : ''; //le creaamos variables $(el nombre que deseas) y es necesario ponerle el mismo nombre que en la base de datos en los corchetes
-    
-    $sql="INSERT INTO cliente(nombre, apellido_paterno, apellido_materno, edad, genero, curp, colonia, estado, municipio, email) VALUES ('$nombre','$apellido_paterno','$apellido_materno','$edad','$genero','$curp','$colonia','$estado','$municipio','$email')"; //capturar valores
+    $password =  (isset($_POST['password'])) ? $_POST['password'] : ''; 
+    $sql="INSERT INTO cliente(nombre, apellido_paterno, apellido_materno, edad, genero, curp, colonia, estado, municipio, email,password) VALUES ('$nombre','$apellido_paterno','$apellido_materno','$edad','$genero','$curp','$colonia','$estado','$municipio','$email','$password')"; //capturar valores
     $query= $con->query($sql);  //revisa lo que estoy pidiendo
 
     if($query){
-        header('location: crud.php');
+        header('Location: crud.php');
     }else{
+        echo'error';
     }
 }else {
     echo 'error';
