@@ -1,5 +1,6 @@
 <?php
     require "../conexion.php";
+    include "crud.php";
     $con = Database::connect();
 
     if(isset($_POST['mod_datos'])){
@@ -30,10 +31,5 @@
     
     $query=$con->query($actualizar);
 
-    if($query){
-        header("crud.php");
-    }
-}else{
-    echo'error';
 }
 ?>

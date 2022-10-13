@@ -15,13 +15,15 @@ $con = Database::connect();
     <meta id="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" class="rel">
     <link rel="stylesheet" href="../../assets/css/crud.css" class="rel">
+    <link rel="stylesheet" href="cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js">
     <title>CRUD</title>
 </head>
 <body>
     <div class="container mt-5">
         <div class="row">
             <div class="cold-md-3">
-                <h1>Ingresar Datos</h1>
+                <h1>Ingresar datos del cliente</h1>
                 <form action="insertar.php" method="POST"><!--en name es necesario colocar el mismo nombre que en la base de datos-->
                     <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre" required>
                     <input type="text" class="form-control mb-3" name="apellido_paterno" placeholder="Apellido paterno" required>
@@ -90,7 +92,7 @@ $con = Database::connect();
                 </form>
             </div>
         </div>
-        <div class="tabla col-md-15">
+        <div class="tabla col-md-5">
             <table class="table">
              <thead class="table-dark">
                 <tr>
@@ -105,7 +107,7 @@ $con = Database::connect();
                     <th>Estado</th>
                     <th>Municipio</th>
                     <th>Gmail</th>
-                    <th>contraseña</th>
+                    <th></th>
                     <th></th>
                 </tr>
              </thead>
@@ -125,8 +127,7 @@ $con = Database::connect();
                 <th><?php echo $row['colonia']?></th>
                 <th><?php echo $row['estado']?></th>
                 <th><?php echo $row['municipio']?></th>
-                <th><?php echo $row['email']?></th>  
-                <th><?php echo $row['password']?></th>        <!-- en $row['id_cliente'] captura un valor todo lo que sea del codigo id_cliente-->
+                <th><?php echo $row['email']?></th>       <!-- en $row['id_cliente'] captura un valor todo lo que sea del codigo id_cliente-->
                 <th> <a href="actualizar.php?id_cliente=<?php echo $row['id_cliente']?>" class="btn btn-info">Editar</a></th>
                 <th><a href="delete.php?id_cliente=<?php echo $row['id_cliente'] ?>" class="btn btn-danger">Eliminar</a></th>
                 </tr>

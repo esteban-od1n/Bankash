@@ -9,8 +9,8 @@ if (isset($_SESSION['user_id'])) {
 include("conexion.php");
 $conn = Database::connect();
 
-if (!empty($_POST['email']) && !empty($_POST['contraseña'])) {
-    $records = $conn->prepare('SELECT id_ejecutivo, email, contraseña FROM registro_ejecutivo WHERE email = :email');
+if (!empty($_POST['email']) && !empty($_POST['password'])) {
+    $records = $conn->prepare('SELECT id_cliente, email, password FROM cliente WHERE email = :email');
     $records->bindParam(':email', $_POST['email']);
     $records->execute();
     $results=$records->fetch(PDO::FETCH_ASSOC);
@@ -19,8 +19,8 @@ if (!empty($_POST['email']) && !empty($_POST['contraseña'])) {
     $message = '';
        //if ($results && count($results) > 0 && password_verify($_POST['password'], $results['password']) (solo cuando hayas hasheado la password en el link viene que hasheo necesita)
     if ($results && count($results) > 0 ) {
-    $_SESSION['user_id'] = $results['id_ejecutivo'];
-    header('Location: ../executive-page.php');
+    $_SESSION['user_id'] = $results['id_cliente'];
+    header('Location: ../user-page.php');
     die; 
 } 
     else {

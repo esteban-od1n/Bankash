@@ -23,7 +23,7 @@
             </div>
             <div class="input-field">
               <i class="fa-solid fa-key"></i>
-              <input type="password" name="password" placeholder="Contraseña" />
+              <input type="password" name="contraseña" placeholder="Contraseña" />
             </div>
             <input type="submit" value="Iniciar sesión" class="btn solid" />
             <div class="social-media">

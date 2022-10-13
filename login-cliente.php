@@ -15,7 +15,7 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="src/loginex.php" method="post" class="sign-in-form">
+          <form action="src/login_user.php" method="post" class="sign-in-form">
             <h2 class="title">Inicia sesión</h2>
             <div class="input-field">
               <i class="fa-regular fa-user"></i>
