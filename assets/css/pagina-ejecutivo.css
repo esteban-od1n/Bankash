@@ -1,52 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.button-15 {
-    background-image: linear-gradient(#42A1EC, #0070C9);
-    border: 1px solid #0077CC;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    direction: ltr;
-    display: block;
-    font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: -.022em;
-    line-height: 1.47059;
-    min-width: 30px;
-    overflow: visible;
-    padding: 4px 15px;
-    text-align: center;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-  }
-  
-  .button-15:disabled {
-    cursor: default;
-    opacity: .3;
-  }
-  
-  .button-15:hover {
-    background-image: linear-gradient(#51A9EE, #147BCD);
-    border-color: #1482D0;
-    text-decoration: none;
-  }
-  
-  .button-15:active {
-    background-image: linear-gradient(#3D94D9, #0067B9);
-    border-color: #006DBC;
-    outline: none;
-  }
-  
-  .button-15:focus {
-    box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
-    outline: none;
-  }
-
 *{
     margin: 0;
     padding: 0;
@@ -101,6 +54,36 @@ body{
     animation: t3 7s ease infinite;
 }
 
+.titulo {
+    text-align: center;
+    flex: 1 1 auto;
+    color: #fff;
+    z-index: 50;
+    font-size: 45px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.botones {
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+}
+header img {
+    width: 50px;
+}
+
+.logo {
+    width: 150px;
+    height: 120px;
+}
+
 @keyframes t1 {
     0%{
         transform: rotate(45deg) translateY(0px);
@@ -137,77 +120,9 @@ body{
     }
 }
 
-.titulo {
-    text-align: center;
-    flex: 1 1 auto;
-    color: #FFFFFF;
-    z-index: 50;
-    font-size: 45px;
-}
-
-.subtitulo {
-    text-align: center;
-    flex: 1 1 auto;
-    color: #FFFFFF;
-    z-index: 50;
-    font-size: 30px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    padding-top: 30px;
-}
-
-.botones {
-    margin-top: 10px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 50;
-    
-}
-header img {
-    width: 50px;
-}
-
-.logo {
-    width: 150px;
-    height: 120px;
-}
-
-.input1 {
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 400px;
-}
-
-.input12 {
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 250px;
-}
-
-.contenido .button-15 {
-    margin-top: 20px;
-    width: 200px;
-    align-self: center;
-}
-
-.contenido {
-    display: flex;
-    flex-flow: column;
-}
-
-.contenido button {
-    margin-top: 10px;
-    width: 200px;
-    align-self: center;
-}
 
 .container__cards{
+    gap: 1em;
     width:100%;
     margin: auto;
     display: flex;
@@ -217,17 +132,16 @@ header img {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-bottom: 1em;
 }
-
 .container__cards a{
     text-decoration: none;
 }
 
-.card {
-    margin-top: 550px;
-    width: 1250px;
-    height: 800px;
-    padding: 30px;
+.card{
+    height: 100%;
+    width: 220px;
+    padding: 20px;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     background: rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -248,7 +162,7 @@ header img {
 
 .cover__card{
     width: 100%;
-    height: 800px;
+    height: 180px;
     border-radius: 14px;
     overflow: hidden;
 }
@@ -266,7 +180,7 @@ header img {
 }
 
 .card p{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 14px;
     font-weight: 300;
     color: #fff;
@@ -274,45 +188,31 @@ header img {
 }
 
 .card hr{
-    margin-top: 30px;
+    margin-top: 10px;
     border: none;
     height: 0.2px;
     background: #41414138;
 }
 
-.subtitulotabla {
-    margin-left: 100px;
-    flex: 1 1 auto;
-    color: #FFFFFF;
-    z-index: 50;
-    font-size: 30px;
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
 }
 
-.table {
-    border: 5px solid black;
-    width: 100px;
+.footer__card h3{
+    font-size: 15px;
+    font-weight: 500;
 }
 
-.tabla {
-    margin-top: 100px;
-    margin-left: -107px;
-    text-align: center;
+@media screen and (max-width:1200px) {
+    .container__cards{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
 }
-
-.propiedadtabla th{
-    background-color: rgb(255, 255, 255);
-    margin-left: 9%;
-}
-
-table tr th {
-    background-color: rgb(161, 174, 175);
-}
-
-label {
-    font-size: 20px;
-}
-
-form fieldset {
-    float: left;
-    width: 48%;
-  }

@@ -48,7 +48,7 @@ CREATE TABLE `cliente` (
 
 INSERT INTO `cliente` (`id_cliente`, `nombre`, `apellido_paterno`, `apellido_materno`, `edad`, `genero`, `curp`, `colonia`, `estado`, `municipio`, `email`, `password`) VALUES
 (1, 'francisco javier ', 'flores ', 'santos', 19, 'Masculino', 'jsdsdgdgsgsdjbdjbv', 'bellavista', 'Colima', 'manzanillo', 'francisc@gmail.com', 'dsvbsbfbsbs'),
-(2, 'francisco javier ', 'flores ', 'santos', 19, 'Masculino', 'asdfghjklñpoiuytrb', 'bellavista', 'Colima', 'manzanillo', 'franciscoflores@gmail.com', 'fsbdfbfbd'),
+(2, 'francisco javier ', 'flores ', 'santos', 19, 'Masculino', 'asdfghjklñpoiuytrb', 'bellavista', 'Colima', 'manzanillo', 'franciscoflores@gmail.com', ' '),
 (4, 'javvr', 'aodo', 'isdvhovd', 28, 'Masculino', 'qwertuiopasdfghjk', 'bellavista', 'Colima', 'manzanillo', 'franciscodls@gmail.com', 'gola123'),
 (6, '', '', '', 0, '', '', '', '', '', '', NULL),
 (16, 'Adolfo', 'perito', 'villa', 20, 'Masculino', 'FOSF030121DCMLNRA4', 'dvhsi', 'Coahuila', 'manzanillo', 'adolfof@gmail.com', NULL),
