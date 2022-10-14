@@ -15,7 +15,7 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="src/login_user.php" method="post" class="sign-in-form">
+          <form action="src/login_user.php" method="POST" class="sign-in-form">
             <h2 class="title">Inicia sesión</h2>
             <div class="input-field">
               <i class="fa-regular fa-user"></i>
@@ -29,7 +29,6 @@
             <div class="social-media">
               <a href="index.php" class="social-icon">
                 <i class="fa-solid fa-house"></i>
-              </a>
               </a>
             </div>
           </form>

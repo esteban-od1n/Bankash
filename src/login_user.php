@@ -3,7 +3,7 @@
 session_start();
 
 if (isset($_SESSION['user_id'])) {
-    header('Location: /index.php');
+    header('Location: ../user-page.php');
     die;
 }
 include("conexion.php");
@@ -24,11 +24,11 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     die; 
 } 
     else {
-        header('Location: ../index.php');
+        header('Location:../user-page.php');
         die;
     }
 } else {
-    header("Location: ../index.php");
+    header("Location:../user-page.php");
     die;
 }
 ?>

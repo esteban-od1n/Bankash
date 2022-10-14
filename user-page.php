@@ -2,10 +2,7 @@
 include("src/conexion.php");
 $conn = Database::connect();
 session_start();
-    if(!isset($_SESSION['id_cliente'])) {
-            header('location: login-cliente.php');
-    }
-    ?>
+   ?>
 <!DOCTYPE html>
 <html lang="en">
 
