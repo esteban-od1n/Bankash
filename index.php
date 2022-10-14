@@ -97,8 +97,7 @@
 
 
 
-   <!-- jequery js--> 
-   <script src="js/jquery-1.12.4.min.js"></script>
+
    <!-- fondos de awesome-->
    <script src="assets/js/all.js"></script>
    <!-- boostrstrap js-->
