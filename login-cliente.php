@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/pagina-ejecutivo.css">
     <title>Bankash</title>
   </head>
   <body>
-    <header>
-
+    <header>  
+    <img src="img/Logo1.png" class="image" alt="" />
     </header>
+
     <main>
+    <div class="container__background-triangle">
+        <div class="triangle triangle1"></div>
+        <div class="triangle triangle2"></div>
+        <div class="triangle triangle3"></div>
+        <div class="triangle triangle4"></div>
+        <div class="triangle triangle5"></div>
+        <div class="triangle triangle6"></div>
+    </div>
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
@@ -23,7 +33,7 @@
             </div>
             <div class="input-field">
               <i class="fa-solid fa-key"></i>
-              <input type="password" name="contraseña" placeholder="Contraseña" />
+              <input type="password" name="password" placeholder="Contraseña" />
             </div>
             <input type="submit" value="Iniciar sesión" class="btn solid" />
             <div class="social-media">
@@ -34,21 +44,6 @@
           </form>
         </div>
       </div>
-
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>¿Qué es Bankash?</h3>
-            <p>
-              Bankash es una aplicación web que sirve para tener una cuenta de
-              tarjeta, podras solicitar un prestamo y transferir dinero a otro usuario o 
-              realizar pagos sobre el prestamo.
-            </p>
-          </div>
-          <img src="img/Logo1.png" class="image" alt="" />
-        </div>
-      </div>
-    </div>
   </main>
 
     <script src="assets/js/script.js"></script>
