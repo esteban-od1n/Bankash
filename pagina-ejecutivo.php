@@ -10,7 +10,7 @@
 <body>
     <header class="header" >
         <img class="logo" src="img/Logo1.png" alt="">
-        <h1 class="titulo">Hola ejecutivo (name)</h1>
+        <h1 class="titulo">Hola ejecutivo</h1>
         <a class="botones" href="src/logout.php"><img src="img/cerrar-sesion.png" alt=""></a>
     </header>
 

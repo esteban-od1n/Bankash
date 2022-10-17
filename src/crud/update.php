@@ -22,12 +22,11 @@
         $estado =  (isset($_POST['estado'])) ? $_POST['estado'] : '';
 
         $municipio =  (isset($_POST['municipio'])) ? $_POST['municipio'] : '';
-        $password =  (isset($_POST['password'])) ? $_POST['password'] : '';
 
         $email =  (isset($_POST['email'])) ? $_POST['email'] : '';
         //UPDATE es para editar en los campos de la base de datos que donde (WHERE) estan el id seleccionado en la parte de edad no es necesario agregar las comillas simplre ya que es un valor entero 
         $actualizar="UPDATE cliente SET nombre='$nombre', apellido_paterno='$apellido_paterno', apellido_materno='$apellido_materno', edad=$edad , genero='$genero', 
-        curp='$curp', colonia='$colonia', estado='$estado', municipio='$municipio', email='$email', password='$password' WHERE id_cliente='$id_cliente'";
+        curp='$curp', colonia='$colonia', estado='$estado', municipio='$municipio', email='$email' WHERE id_cliente='$id_cliente'";
     
     $query=$con->query($actualizar);
 

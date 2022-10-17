@@ -116,7 +116,6 @@ $con = Database::connect();
         </div>
         <table class="table">
         <div class="tabla col-md-5">
-                <label class="subtitulotabla" for="">Tabla de registro</label>
              <thead class="propiedadtabla">
                 <tr>
                     <th>ID del cliente</th>

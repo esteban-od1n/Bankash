@@ -20,9 +20,6 @@
             <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                  <img class="image" src="img/Logo1.png" alt="" >  
-                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,13 +38,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="2" href="src/logout.php">¿Sabias que?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="3" href="#">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="4" href="#">Ayuda</a>
+                        <a class="nav-link" data-scroll-nav="3" href="src/logout.php">Sobre nosotros</a>
                     </li>
                     </ul>
                 </div>
@@ -68,11 +59,7 @@
                     <div class="col-lg-6 col-md-10">
                       <div class="header-hero-content">
                         <h1 class="header-title"><span>Hola bienvenido a </span>BANKASH</h1>
-                        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem eveniet laudantium ratione obcaecati officiis molestias, suscipit saepe, voluptas dolorem eius sed perferendis blanditiis repellendus consequuntur tenetur. Quae aliquam necessitatibus minima.</p>
-                        <ul class="d-flex">
-                            <li><a href="" class="main-btn">Saber más</a></li>
-                            <li><a href="" class="header-video"><i class="fa-solid fa-play"></i></a></li>
-                        </ul> 
+                        <p class="text">Bankash es un aplicacion web para solicitar prestamos, ademas de pagar desde linea solo ingresando tu correo y listo.Tambien puedes registarte solicitando ayuda del ejecutivo en la sucursal si aún no te registras.</p>
                     </div>  
                     </div>
                     <div class="col-lg-3 col-md-6">
