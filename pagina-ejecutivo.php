@@ -49,7 +49,7 @@
                 </div>
             </div>
         </a>
-        <a href="pattern/verprestamo.html">
+        <a href="pattern/verprestamo1.html">
             <div class="card">
                 <div class="cover__card">
                     <img src="img/img-executive/retorno-de-la-inversion.png" alt="">
