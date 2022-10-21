@@ -38,7 +38,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-scroll-nav="3" href="src/logout.php">Sobre nosotros</a>
+                        <a class="nav-link" data-scroll-nav="3" href="/sobre_nosotros.html">Sobre nosotros</a>
                     </li>
                     </ul>
                 </div>
