@@ -38,18 +38,18 @@ $con = Database::connect();
             <div class="cover__card">
                 <h1 class="subtitulo">Ingresar datos del cliente</h1>
                 <form class="contenido" action="insertar.php" method="POST"><!--en name es necesario colocar el mismo nombre que en la base de datos-->
-                    <label for="">Ingresa un nombre:</label>
+                    <label for="">Ingresa el nombre:</label>
                     <input type="text" class="input1" name="nombre" placeholder="Nombre" required>
-                    <label for="">Ingresa apellido paterno:</label>
+                    <label for="">Ingresa el apellido paterno:</label>
                     <input type="text" class="input1" name="apellido_paterno" placeholder="Apellido paterno" required>
-                    <label for="">Ingresa apellido materno:</label>
+                    <label for="">Ingresa el apellido materno:</label>
                     <input type="text" class="input1" name="apellido_materno" placeholder="Apellido materno " required>
-                    <label for="">Ingresa tu edad:</label>
+                    <label for="">Ingresa la edad del cliente: </label>
                     <input type="number" class="input1" name="edad" placeholder="Edad" min="18" max="99"required>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1" class="col-form-label">Ingresa tu sexo:</label>
+                                <label for="exampleFormControlSelect1" class="col-form-label">Ingresa el sexo:</label>
                                 <select class="input12" name="genero" required>
                                 <option></option>
                                 <option>Masculino</option>
@@ -61,7 +61,7 @@ $con = Database::connect();
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1" class="col-form-label">Ingresa tu estado:</label>
+                                <label for="exampleFormControlSelect1" class="col-form-label">Ingresa el estado:</label>
                                 <select class="input12" name="estado" required>
                                     <option></option>
                                     <option>Aguscalientes</option>
@@ -100,15 +100,15 @@ $con = Database::connect();
                             </div>
                         </div>
                     </div>
-                    <label for="">Ingresa tu CURP:</label>
+                    <label for="">Ingresa la CURP del cliente:</label>
                     <input type="text" class="input1" name="curp" placeholder="Curp" minlength="18" maxlength="18" required>
-                    <label for="">Ingresa tu colonia:</label>
+                    <label for="">Ingresa la colonia del cliente:</label>
                     <input type="text" class="input1" name="colonia" placeholder="Colonia" required>
-                    <label for="">Ingresa tu municipio: </label>
+                    <label for="">Ingresa el municipio del cliente: </label>
                     <input type="text" class="input1" name="municipio" placeholder="Municipio" required>
-                    <label for="">Ingresa tu email:</label>
+                    <label for="">Ingresa el email del cliente:</label>
                     <input type="email" class="input1" name="email" placeholder="Gmail" required>
-                    <label for="">Ingresa tu contraseña:</label>
+                    <label for="">Ingresa tu contraseña (el cliente debe rellenar este campo):</label>
                     <input type="password" class="input1" name="password" placeholder="Contraseña" required>
                     <input type="submit" class="button-15" name="enviar_datos">
                 </form>
