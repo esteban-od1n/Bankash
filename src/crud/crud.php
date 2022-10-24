@@ -44,8 +44,8 @@ $con = Database::connect();
                     <input type="text" class="input1" name="apellido_paterno" placeholder="Apellido paterno" required>
                     <label for="">Ingresa el apellido materno:</label>
                     <input type="text" class="input1" name="apellido_materno" placeholder="Apellido materno " required>
-                    <label for="">Ingresa la edad del cliente: </label>
-                    <input type="number" class="input1" name="edad" placeholder="Edad" min="18" max="99"required>
+                    <label for="">Ingresa la fecha de nacimiento del cliente: </label>
+                    <input type="date" class="input1" name="fecha_nac" placeholder="fecha de nacimiento" required>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
@@ -116,13 +116,13 @@ $con = Database::connect();
         </div>
         <table class="table">
         <div class="tabla col-md-5">
-             <thead class="propiedadtabla">
+             <thead class="propifecha_natabla">
                 <tr>
                     <th>ID del cliente</th>
                     <th>Nombre</th>
                     <th>Apellido paterno</th>
                     <th>Apellido materno</th>
-                    <th>Edad</th>
+                    <th>fecha de nacimineto</th>
                     <th>sexo</th>
                     <th>CURP</th>
                     <th>Colonia</th>
@@ -143,7 +143,7 @@ $con = Database::connect();
                 <th><?php echo $row['nombre']?></th>
                 <th><?php echo $row['apellido_paterno']?></th>
                 <th><?php echo $row['apellido_materno']?></th>
-                <th><?php echo $row['edad']?></th>
+                <th><?php echo $row['fecha_nac']?></th>
                 <th><?php echo $row['genero']?></th>
                 <th><?php echo $row['curp']?></th>
                 <th><?php echo $row['colonia']?></th>

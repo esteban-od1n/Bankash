@@ -11,7 +11,7 @@
 
         $apellido_materno =  (isset($_POST['apellido_materno'])) ? $_POST['apellido_materno'] : '';
         
-        $edad =  (isset($_POST['edad'])) ? $_POST['edad'] : '';
+        $fecha_nac =  (isset($_POST['fecha_nac'])) ? $_POST['fecha_nac'] : '';
 
         $genero = (isset($_POST['genero'])) ? $_POST['genero'] : '';
 
@@ -24,8 +24,8 @@
         $municipio =  (isset($_POST['municipio'])) ? $_POST['municipio'] : '';
 
         $email =  (isset($_POST['email'])) ? $_POST['email'] : '';
-        //UPDATE es para editar en los campos de la base de datos que donde (WHERE) estan el id seleccionado en la parte de edad no es necesario agregar las comillas simplre ya que es un valor entero 
-        $actualizar="UPDATE cliente SET nombre='$nombre', apellido_paterno='$apellido_paterno', apellido_materno='$apellido_materno', edad=$edad , genero='$genero', 
+        //UPDATE es para editar en los campos de la base de datos que donde (WHERE) estan el id seleccionado en la parte de fecha_na no es necesario agregar las comillas simplre ya que es un valor entero 
+        $actualizar="UPDATE cliente SET nombre='$nombre', apellido_paterno='$apellido_paterno', apellido_materno='$apellido_materno', fecha_nac='$fecha_nac', genero='$genero', 
         curp='$curp', colonia='$colonia', estado='$estado', municipio='$municipio', email='$email' WHERE id_cliente='$id_cliente'";
     
     $query=$con->query($actualizar);
