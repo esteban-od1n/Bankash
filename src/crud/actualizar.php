@@ -28,8 +28,8 @@
                     <input type="text" class="form-control mb-3" name="apellido_paterno" placeholder="Apellido paterno" required value="<?php echo $row['apellido_paterno'] ?>">
                     <label for="exampleFormControlSelect1" class="col-form-label">Apellido Materno:</label>
                     <input type="text" class="form-control mb-3" name="apellido_materno" placeholder="Apellido materno " required value="<?php echo $row['apellido_materno'] ?>">
-                    <label for="exampleFormControlSelect1" class="col-form-label">Edad:</label>
-                    <input type="number" class="form-control mb-3" name="edad" placeholder="Edad" min="18" max="99" required value="<?php echo $row['edad'] ?>">
+                    <label for="exampleFormControlSelect1" class="col-form-label">fecha de nacimiento:</label>
+                    <input type="date" class="form-control mb-3" name="fecha_nac" placeholder="Fecha de nacimiento" required value="<?php echo $row['fecha_nac'] ?>">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">

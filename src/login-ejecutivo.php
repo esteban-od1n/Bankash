@@ -18,17 +18,27 @@ if (!empty($_POST['correo']) && !empty($_POST['contraseña'])) {
 
     $message = '';
        //if ($results && count($results) > 0 && password_verify($_POST['password'], $results['password']) (solo cuando hayas hasheado la password en el link viene que hasheo necesita)
-    if ($results && count($results) > 0 ) {
+    if ($results && count($results) > 0 && password_verify($_POST['contraseña'], $results['contraseña']) ) {
     $_SESSION['user_id'] = $results['id_ejecutivo'];
     header('Location: ../pagina-ejecutivo.php');
     die; 
 } 
     else {
-        header('Location: ../index.php');
+        echo '
+            <script type="text/javascript">
+                alert("Contraseña incorrecta o correo incorrecto");
+                window.location = "../login-cliente.php";
+            </script>
+            ';
         die;
     }
 } else {
-    header("Location: ../index.php");
+    echo '
+    <script type="text/javascript">
+        alert("Contraseña incorrecta o correo incorrecto");
+        window.location = "../login-cliente.php";
+    </script>
+    ';  
     die;
 }
 ?>
