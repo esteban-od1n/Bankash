@@ -1,7 +1,7 @@
 <?php 
     require_once "src/conexion.php";
     $con = Database::connect();
-
+    
     $sql = "SELECT * FROM registro_ejecutivo";
     $query=$con->query($sql);
     $row=$query->fetch(PDO::FETCH_ASSOC); 
@@ -23,7 +23,7 @@
     <main>
         <form action="src/crud/insert_exec.php" method="POST">
         <label for="">Ingresa el la contraseña correcta:</label>
-                    <input type="text" class="input1" name="token" placeholder="Contraseña" >
+                    <input type="password" class="input1" name="token" placeholder="Contraseña" >
             <label for="">Ingresa el nombre:</label>
                     <input type="text" class="input1" name="nombre" placeholder="Nombre" >
             <label for="">Ingresa tu apellido paterno:</label>

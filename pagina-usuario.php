@@ -1,4 +1,21 @@
+<?php
+//recorde la variable de sesion
+    session_start();
+    require_once "src/conexion.php";
+    $con = Database::connect();/*
+    //validar que se cree una variable de sesion al pasar por login
+    $usuario = $_SESSION['user_id'];
+    if(!isset($usuario)){
+        echo '
+            <script type="text/javascript">
+                alert("Debes de iniciar sesion");
+            </script>
+            ';
+        die;
+    }*/
 
+?>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
