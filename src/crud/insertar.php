@@ -19,7 +19,7 @@
     $query= $con->query($sql);  //revisa lo que estoy pidiendo
 
     if($query){
-        header('Location: crud.php');
+        header('Location: table_users.php');
     }else{
         echo'error';
     }

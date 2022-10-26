@@ -1,3 +1,9 @@
+<?php require_once "src/conexion.php";
+$con = Database::connect();
+    $sql = "SELECT nombre FROM registro_ejecutivo ";
+    $query=$con->query($sql);
+    $row=$query->fetch(PDO::FETCH_ASSOC); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +16,11 @@
 <body>
     <header class="header" >
         <img class="logo" src="img/Logo1.png" alt="">
-        <h1 class="titulo">Hola ejecutivo</h1>
+        <?php 
+                //consulta y genere cada uno de los campos
+                while($row=$query->fetch(PDO::FETCH_ASSOC)){ 
+                ?>
+        <h1 class="titulo">Hola ejecutivo <?php echo $row['nombre']?></h1>  <?php }?>
         <a class="botones" href="src/logout.php"><img src="img/cerrar-sesion.png" alt=""></a>
     </header>
 

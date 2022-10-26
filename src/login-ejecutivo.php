@@ -8,7 +8,9 @@ if (isset($_SESSION['user_id'])) {
 }
 include("conexion.php");
 $conn = Database::connect();
-
+   /* $correo = $_POST["correo"];
+    echo $correo; 
+*/
 if (!empty($_POST['correo']) && !empty($_POST['contraseña'])) {
     $records = $conn->prepare('SELECT id_ejecutivo, correo, contraseña FROM registro_ejecutivo WHERE correo = :correo');
     $records->bindParam(':correo', $_POST['correo']);

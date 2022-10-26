@@ -1,12 +1,3 @@
-<?php 
-    require_once "src/conexion.php";
-    $con = Database::connect();
-    
-    $sql = "SELECT * FROM registro_ejecutivo";
-    $query=$con->query($sql);
-    $row=$query->fetch(PDO::FETCH_ASSOC); 
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +13,7 @@
     </header>
     <main>
         <form action="src/crud/insert_exec.php" method="POST">
-        <label for="">Ingresa el la contraseña correcta:</label>
+        <label for="">Ingresa el la contraseña correcta para registrar un nuevo ejecutivo:</label>
                     <input type="password" class="input1" name="token" placeholder="Contraseña" >
             <label for="">Ingresa el nombre:</label>
                     <input type="text" class="input1" name="nombre" placeholder="Nombre" >
