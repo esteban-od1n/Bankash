@@ -3,9 +3,6 @@ $con = Database::connect();
     $sql = "SELECT nombre FROM registro_ejecutivo ";
     $query=$con->query($sql);
     $row=$query->fetch(PDO::FETCH_ASSOC); 
-    if(!isset($_SESSION['id_ejecutivo'])) {
-        header('location: index.php');
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">

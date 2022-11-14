@@ -37,6 +37,7 @@ $con = Database::connect();
         <div class="card">
             <div class="cover__card">
                 <h1 class="subtitulo">Ingresar datos del cliente</h1>
+                <a href="table_users.php" class="button"><button>Tabla de los clientes</button></a> 
                 <form class="contenido" action="insertar.php" method="POST"><!--en name es necesario colocar el mismo nombre que en la base de datos-->
                     <label for="">Ingresa el nombre:</label>
                     <input type="text" class="input1" name="nombre" placeholder="Nombre" required>
