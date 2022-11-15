@@ -29,7 +29,7 @@ if (!empty($_POST['correo']) && !empty($_POST['contraseña'])) {
         echo '
             <script type="text/javascript">
                 alert("Contraseña incorrecta o correo incorrecto");
-                window.location = "../login-cliente.php";
+                window.location = "../login-ejecutivo.php";
             </script>
             ';
         die;
@@ -38,7 +38,7 @@ if (!empty($_POST['correo']) && !empty($_POST['contraseña'])) {
     echo '
     <script type="text/javascript">
         alert("Contraseña incorrecta o correo incorrecto");
-        window.location = "../login-cliente.php";
+        window.location = "../login-ejecutivo.php";
     </script>
     ';  
     die;
