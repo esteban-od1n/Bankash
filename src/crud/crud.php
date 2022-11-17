@@ -111,6 +111,8 @@ $con = Database::connect();
                     <input type="email" class="input1" name="email" placeholder="Gmail" required>
                     <label for="">Ingresa tu contraseña (el cliente debe rellenar este campo):</label>
                     <input type="password" class="input1" name="password" placeholder="Contraseña" required>
+                    <label for="">Ingresa el saldo a transferir:</label>
+                    <input type="number" class="input1" name="saldo" placeholder="0000" required>
                     <input type="submit" class="button-15" name="enviar_datos">
                 </form>
             </div>

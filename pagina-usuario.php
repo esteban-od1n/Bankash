@@ -69,7 +69,7 @@
                 </div>
             </div>
         </a>
-        <a href="">
+        <a href="pattern/verprestamo1.php">
             <div class="card">
                 <div class="cover__card">
                     <img src="img/img-user/prestamo.png" alt="">

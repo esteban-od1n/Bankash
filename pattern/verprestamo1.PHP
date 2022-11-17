@@ -23,9 +23,9 @@
     <div class="container__cards">
         <div class="card">
             <div class="cover__card">
-                <form action="" method="POST" class="contenido">
-                    Ingresa la curp el usuario:
-                    <input type="text" class="input1" name="nombre" placeholder="Curp">
+                <form action="verprestamo.php" method="POST" class="contenido">
+                    Ingresa el numero de cuenta del usuario:
+                    <input type="text" class="input1" name="nombre" placeholder="Nmo. de cuenta">
                     <button name="action" class="button-15" value="">Buscar</button>
                 </form>
                 <div>
