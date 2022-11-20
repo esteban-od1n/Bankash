@@ -29,7 +29,7 @@
                     Ingresa el monton del prestamo que desea:
                     <input type="number" class="input1" name="monto" placeholder="$0.00" min="1000" max="1000000" required>
                     Ingresa el plazo a pagar del prestamo:
-                    <select class="input1">
+                    <select class="input1" name="plazo">
                         <option value="">6 meses</option>
                         <option value="">12 meses</option>
                         <option value="">18 meses</option>
