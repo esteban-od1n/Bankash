@@ -15,11 +15,12 @@
     $email =  (isset($_POST['email'])) ? $_POST['email'] : ''; //le creaamos variables $(el nombre que deseas) y es necesario ponerle el mismo nombre que en la base de datos en los corchetes
     $password = strip_tags($_POST['password']);
     $password =password_hash($_POST['password'], PASSWORD_BCRYPT);
-    $sql="INSERT INTO cliente(nombre, apellido_paterno, apellido_materno, fecha_nac, genero, curp, colonia, estado, municipio, email,password) VALUES ('$nombre','$apellido_paterno','$apellido_materno','$fecha_nac','$genero','$curp','$colonia','$estado','$municipio','$email','$password')"; //capturar valores
+    $saldo =  (isset($_POST['saldo'])) ? $_POST['saldo'] : '';
+    $sql="INSERT INTO cliente(nombre, apellido_paterno, apellido_materno, fecha_nac, genero, curp, colonia, estado, municipio, email,password, saldo) VALUES ('$nombre','$apellido_paterno','$apellido_materno','$fecha_nac','$genero','$curp','$colonia','$estado','$municipio','$email','$password','$saldo')"; //capturar valores
     $query= $con->query($sql);  //revisa lo que estoy pidiendo
 
     if($query){
-        header('Location: crud.php');
+        header('Location: table_users.php');
     }else{
         echo'error';
     }

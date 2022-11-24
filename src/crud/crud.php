@@ -35,6 +35,7 @@ $con = Database::connect();
         <div class="card">
             <div class="cover__card">
                 <h1 class="subtitulo">Ingresar datos del cliente</h1>
+                <a href="table_users.php" class="button"><button>Tabla de los clientes</button></a> 
                 <form class="contenido" action="insertar.php" method="POST"><!--en name es necesario colocar el mismo nombre que en la base de datos-->
                     <label for="">Ingresa el nombre:</label>
                     <input type="text" class="input1" name="nombre" placeholder="Nombre" required>
@@ -43,7 +44,7 @@ $con = Database::connect();
                     <label for="">Ingresa el apellido materno:</label>
                     <input type="text" class="input1" name="apellido_materno" placeholder="Apellido materno " required>
                     <label for="">Ingresa la fecha de nacimiento del cliente: </label>
-                    <input type="date" class="input1" name="fecha_nac" placeholder="fecha de nacimiento" required>
+                    <input type="date" class="input1" name="fecha_nac" placeholder="fecha de nacimiento" required   >
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
@@ -108,6 +109,8 @@ $con = Database::connect();
                     <input type="email" class="input1" name="email" placeholder="Gmail" required>
                     <label for="">Ingresa contraseña (el cliente debe rellenar este campo):</label>
                     <input type="password" class="input1" name="password" placeholder="Contraseña" required>
+                    <label for="">Ingresa el saldo a transferir:</label>
+                    <input type="number" class="input1" name="saldo" placeholder="0000" required>
                     <input type="submit" class="button-15" name="enviar_datos">
                 </form>
             </div>

@@ -8,7 +8,7 @@
     $nombre = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
     $apellido_paterno =  (isset($_POST['apellido_paterno'])) ? $_POST['apellido_paterno'] : '';
     $apellido_materno =  (isset($_POST['apellido_materno'])) ? $_POST['apellido_materno'] : '';
-    $fecha_nac =  (isset($_POST['fecha_nac'])) ? $_POST['fecha_na'] : '';
+    $fecha_nac =  (isset($_POST['fecha_nac'])) ? $_POST['fecha_nac'] : '';
     $nombre_de_sucursal =  (isset($_POST['nombre_de_sucursal'])) ? $_POST['nombre_de_sucursal'] : '';
     $correo = (isset($_POST['correo'])) ? $_POST['correo'] : '';
     $contraseña = strip_tags($_POST['contraseña']);

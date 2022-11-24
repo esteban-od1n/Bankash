@@ -25,18 +25,18 @@
             <div class="cover__card">
                 <form action="src/prestamo.php" method="POST" class="contenido">
                     Ingresa la curp el usuario:
-                    <input type="text" class="input1" name="curp" placeholder="Curp">
-                    Ingresa el monton del prestamo que desea (limite de $100,000.00):
-                    <input type="text" class="input1" name="monto" placeholder="$0.00">
+                    <input type="text" class="input1" name="curp" placeholder="Curp" minlength="18" maxlength="18" required>
+                    Ingresa el monton del prestamo que desea:
+                    <input type="number" class="input1" name="monto" placeholder="$0.00" min="1000" max="1000000" required>
                     Ingresa el plazo a pagar del prestamo:
-                    <select class="input1">
+                    <select class="input1" name="plazo">
                         <option value="">6 meses</option>
                         <option value="">12 meses</option>
                         <option value="">18 meses</option>
                         <option value="">24 meses</option>
                         <option value="">30 meses</option>
                         <option value="">36 meses</option>
-                    </select>
+                    </select required>
                     <button name="action" class="button-15" value="aceptar">Aceptar</button>
                 </form>
             </div>

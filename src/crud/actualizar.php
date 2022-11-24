@@ -94,6 +94,7 @@
                     <input type="text" class="form-control mb-3" name="municipio" placeholder="Municipio" required value="<?php echo $row['municipio'] ?>">
                     <label for="exampleFormControlSelect1" class="col-form-label">Correo electronico:</label>
                     <input type="email" class="form-control mb-3" name="email" placeholder="Gmail" required value="<?php echo $row['email'] ?>">
+                    <input type="number" class="form-control mb-3" name="saldo" placeholder="$$$" required value="<?php echo $row['saldo'] ?>">
                     <input type="submit" class="btn btn-primary" name="mod_datos">
                 </form>
     </div>

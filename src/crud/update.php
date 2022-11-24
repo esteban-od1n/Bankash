@@ -24,9 +24,11 @@
         $municipio =  (isset($_POST['municipio'])) ? $_POST['municipio'] : '';
 
         $email =  (isset($_POST['email'])) ? $_POST['email'] : '';
+        
+        $saldo =  (isset($_POST['saldo'])) ? $_POST['saldo'] : '';
         //UPDATE es para editar en los campos de la base de datos que donde (WHERE) estan el id seleccionado en la parte de fecha_na no es necesario agregar las comillas simplre ya que es un valor entero 
         $actualizar="UPDATE cliente SET nombre='$nombre', apellido_paterno='$apellido_paterno', apellido_materno='$apellido_materno', fecha_nac='$fecha_nac', genero='$genero', 
-        curp='$curp', colonia='$colonia', estado='$estado', municipio='$municipio', email='$email' WHERE id_cliente='$id_cliente'";
+        curp='$curp', colonia='$colonia', estado='$estado', municipio='$municipio', email='$email', saldo='$saldo' WHERE id_cliente='$id_cliente'";
     
     $query=$con->query($actualizar);
 
