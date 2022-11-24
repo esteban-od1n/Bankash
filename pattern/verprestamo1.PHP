@@ -47,6 +47,7 @@
                         $intereses = $p * $int;
                         $amorti = $pagomes - $intereses;
                         $newsaldo = $p - $amorti;
+                        if ($m == 12) {
                         $data1 = bcdiv($pagomes, '1', 3);
                         $data13 = bcdiv($intereses, '1', 3);
                         $data25 = bcdiv($newsaldo, '1', 3);
@@ -179,7 +180,7 @@
                         echo "<tr><td>".$data34."</td></tr>";
                         echo "<tr><td>".$data35."</td></tr>";
                         echo "<tr><td>".$data36."</td></tr>";   
-       
+                        }
                            ?>
                         </tr>
                     </table>
