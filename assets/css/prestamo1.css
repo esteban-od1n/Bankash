@@ -75,7 +75,6 @@
 
 body{
     background-color: #005e94;
-    padding-bottom: 500px;
 }
 
 .container__background-triangle{
@@ -135,6 +134,7 @@ header {
 }
 
 .botones {
+    margin-top: 10px;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -203,7 +203,7 @@ header img {
 }
 
 .card{
-    margin-top: -200px;
+    margin-top: -15%;
     width: 1250px;
     height: 300px;
     padding: 30px;
@@ -271,17 +271,52 @@ header img {
     font-weight: 500;
 }
 
-@media screen and (max-width:1200px) {
-    .container__cards{
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-        margin-top: 100px;
-        padding-bottom: 100px;
-    }
-}
+@media (max-width: 1200px) {
 
-label {
-    font-size: 20px;
+    /* Header */
+
+    .logo {
+        width: 100px;
+        height: 70px;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin-left: -17%;
+        margin-top: 7%;
+    }
+
+    .botones {
+        width: 60px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    /* Cartas */
+
+    .container__cards{
+        margin-top: 520px;
+
+    }
+
+    .card{
+        height: 100%;
+        padding: 10px;
+        width: 365px;
+    }
+
+    .footer__card{
+        display: none;
+    }
+    
+    .footer__card h3{
+        display: none;
+    }
+
+    .imgapartado {
+    height: 200px;
+    padding-left: 110px;
+    margin-left: -60px;
+    }
 }

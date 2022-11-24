@@ -208,7 +208,8 @@ header img {
 }
 
 .container__cards{
-    width:100%;
+    gap: 1em;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -224,7 +225,7 @@ header img {
 }
 
 .card {
-    margin-top: 250px;
+    margin-top: 20%;
     width: 1000px;
     height: 800px;
     padding: 30px;
@@ -291,11 +292,10 @@ header img {
 .table {
     border: 5px solid black;
     width: 100px;
+    margin: 2%;
 }
 
 .tabla {
-    margin-top: 100px;
-    margin-left: -107px;
     text-align: center;
 }
 
@@ -316,3 +316,42 @@ form fieldset {
     float: left;
     width: 48%;
   }
+
+  @media (max-width: 870px) {
+
+    /* Header */
+
+    .logo {
+        width: 100px;
+        height: 70px;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin-left: -5%;
+        margin-top: 7%;
+    }
+
+    .botones {
+        width: 60px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    /* Cartas */
+
+    .container__cards{
+        margin-top: 520px;
+
+    }
+
+    .card{
+        width: 60%;
+        margin-top: -90%;
+    }
+
+    .cover__card{
+        padding-bottom: 30px;
+    }
+}

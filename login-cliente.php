@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/pagina-ejecutivo.css">
+    <link rel="stylesheet" href="assets/css/pagina-usuario.css">
     <title>Bankash</title>
   </head>
   <body>
@@ -26,7 +26,7 @@
       <div class="forms-container">
         <div class="signin-signup">
           <form action="src/login-usuario.php" method="POST" class="sign-in-form">
-            <h2 class="title">Inicia sesión</h2>
+            <h2 class="title">Inicia sesión cliente</h2>
             <div class="input-field">
               <i class="fa-regular fa-user"></i>
               <input type="text" name="email" placeholder="Gmail" />

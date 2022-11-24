@@ -26,7 +26,7 @@
                 <form action="src/prestamo.php" method="POST" class="contenido">
                     Ingresa la curp el usuario:
                     <input type="text" class="input1" name="curp" placeholder="Curp">
-                    Ingresa el monton del prestamo que desea:
+                    Ingresa el monton del prestamo que desea (limite de $100,000.00):
                     <input type="text" class="input1" name="monto" placeholder="$0.00">
                     Ingresa el plazo a pagar del prestamo:
                     <select class="input1">
