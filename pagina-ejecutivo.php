@@ -1,6 +1,7 @@
 <?php require_once "src/conexion.php";
 $con = Database::connect();
-    $sql = "SELECT nombre FROM registro_ejecutivo ";
+    $id_ejecutivo = $_POST['id_ejecutivo'];
+    $sql = "SELECT nombre FROM registro_ejecutivo where id_ejecutivo = '$id_ejecutivo' ";
     $query=$con->query($sql);
     $row=$query->fetch(PDO::FETCH_ASSOC); 
 ?>
