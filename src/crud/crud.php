@@ -115,6 +115,7 @@ $con = Database::connect();
                 </form>
             </div>
         </div>
+        </div>
     </div>
     <sript src="../assets/js/bootstrap.min.js"></sript>
 </body>
