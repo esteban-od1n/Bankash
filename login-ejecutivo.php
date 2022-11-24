@@ -25,7 +25,7 @@
       <div class="forms-container">
         <div class="signin-signup">
           <form action="src/login-ejecutivo.php" method="POST" class="sign-in-form">
-            <h2 class="title">Inicia sesión</h2>
+            <h2 class="title">Inicia sesión ejecutivo</h2>
             <div class="input-field">
               <i class="fa-regular fa-user"></i>
               <input type="text" name="correo" placeholder="Gmail" />

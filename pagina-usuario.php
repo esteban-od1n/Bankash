@@ -23,7 +23,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu de usuario</title>
-    <link rel="stylesheet" href="assets/css/pagina-ejecutivo.css">
+    <link rel="stylesheet" href="assets/css/pagina-usuario.css">
 </head>
 <body>
     <header class="header" >
@@ -44,7 +44,7 @@
         <a href="pattern/tarjeta.html">
             <div class="card">
                 <div class="cover__card">
-                    <img src="img/img-user/tarjeta-de-debito.png" alt="">
+                    <img class="imgapartado" src="img/img-user/tarjeta-de-debito.png" alt="">
                 </div>
                 <h2>Mi tarjeta</h2>
                 <p>Puedes checar los datos importantes de tu tarjeta.</p>
@@ -58,7 +58,7 @@
         <a href="pattern/versaldo.html">
             <div class="card">
                 <div class="cover__card">
-                    <img src="img/img-user/saldo-de-gastos.png" alt="">
+                    <img class="imgapartado" src="img/img-user/saldo-de-gastos.png" alt="">
                 </div>
                 <h2>Revisar saldo</h2>
                 <p>Puedes revisar tu dinero dentro de tu tarjeta.</p>
@@ -72,7 +72,7 @@
         <a href="">
             <div class="card">
                 <div class="cover__card">
-                    <img src="img/img-user/prestamo.png" alt="">
+                    <img class="imgapartado" src="img/img-user/prestamo.png" alt="">
                 </div>
                 <h2>Revisar prestamo</h2>
                 <p>Puedes revisar tus prestamos solicitados.</p>
@@ -86,7 +86,7 @@
         <a href="">
             <div class="card">
                 <div class="cover__card">
-                    <img src="img/img-user/pedir-prestado.png" alt="">
+                    <img class="imgapartado" src="img/img-user/pedir-prestado.png" alt="">
                 </div>
                 <h2>Revisar abono</h2>
                 <p>Puedes revisar tus abonos realizados.</p>

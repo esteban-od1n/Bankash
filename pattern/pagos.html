@@ -8,24 +8,31 @@
     <title>Validar pagos</title>
 </head>
 <body>
-    <main>
-        <header class="header">
-            <img class="logo" src="../img/Logo1.png" alt="">
-            <h1 class="titulo">Validar pagos</h1>
-            <div class="botones">
-                <a href="../pagina-ejecutivo.html"><img src="../img/regreso.png" alt=""></a>
-            </div>
-        </header>
+    <header class="header">
+        <img class="logo" src="../img/Logo1.png" alt="">
+        <h1 class="titulo">Validar pagos</h1>
+        <a class="botones" href="../pagina-ejecutivo.php"><img src="../img/regresar.png" alt=""></a>
+    </header>
+    <div class="container__background-triangle">
+        <div class="triangle triangle1"></div>
+        <div class="triangle triangle2"></div>
+        <div class="triangle triangle3"></div>
+    </div>
 
-        <form action="" method="POST" class="contenido">
-            Ingresa el nombre del cliente:
-            <input type="text" class="input1" name="nombre" placeholder="Cliente">
-            Ingresa el numero de cuenta:
-            <input type="text" class="input1" name="nombre" placeholder="000000">
-            Ingresa el concepto del pago:
-            <input type="text" class="input1" name="nombre" placeholder="Concepto">
-            <button name="action" class="button-15" value="baja">Generar vista de referencia</button>
-        </form>
-    </main>
+    <div class="container__cards">
+        <div class="card">
+            <div class="cover__card">
+                <form action="" method="POST" class="contenido">
+                    Ingresa el nombre del cliente:
+                    <input type="text" class="input1" name="nombre" placeholder="Cliente">
+                    Ingresa el numero de cuenta:
+                    <input type="text" class="input1" name="nombre" placeholder="000000">
+                    Ingresa el concepto del pago:
+                    <input type="text" class="input1" name="nombre" placeholder="Concepto">
+                    <button name="action" class="button-15" value="baja">Generar vista de referencia</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

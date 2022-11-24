@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/pagina-ejecutivo.css">
 </head>
 <body>
-    <header class="header" >
+    <header class="header">
         <img class="logo" src="img/Logo1.png" alt="">
         <h1 class="titulo">Hola ejecutivo</h1>
         <a class="botones" href="src/logout.php"><img src="img/cerrar-sesion.png" alt=""></a>
@@ -24,10 +24,24 @@
         <a href="src/crud/crud.php">
             <div class="card">
                 <div class="cover__card">
-                    <img src="img/img-executive/objetivo.png" alt="">
+                    <img class="imgapartado" src="img/img-executive/objetivo.png" alt="">
                 </div>
                 <h2>Agregar, modificar y eliminar usuarios</h2>
-                <p>Da de alta, da de baja y puedes modificar usuarios en el sistema</p>
+                <p>Da de alta a usuarios nuevos</p>
+                <hr>
+                <div class="footer__card">
+                    <h3 class="user__name">Bankash</h3>
+                    <i>0000</i>
+                </div>
+            </div>
+        </a>
+        <a href="pattern/tabladeusuarios.php">
+            <div class="card">
+                <div class="cover__card">
+                    <img class="imgapartado" src="img/img-executive/mesa.png" alt="">
+                </div>
+                <h2>Ver tabla de usuarios registrados</h2>
+                <p>Puede ver, modificar o eliminar usuarios que estan en el sistema</p>
                 <hr>
                 <div class="footer__card">
                     <h3 class="user__name">Bankash</h3>
@@ -38,7 +52,7 @@
         <a href="pattern/prestamo1.php">
             <div class="card">
                 <div class="cover__card">
-                    <img src="img/img-executive/prestamo.png" alt="">
+                    <img class="imgapartado" src="img/img-executive/prestamo.png" alt="">
                 </div>
                 <h2>Generar nuevo prestamo</h2>
                 <p>Puedes generar un nuevo prestamo al un cliente</p>
@@ -52,7 +66,7 @@
         <a href="pattern/verprestamo1.php">
             <div class="card">
                 <div class="cover__card">
-                    <img src="img/img-executive/retorno-de-la-inversion.png" alt="">
+                    <img class="imgapartado" src="img/img-executive/retorno-de-la-inversion.png" alt="">
                 </div>
                 <h2>Ver prestamos</h2>
                 <p>Puedes ver los prestamos que han solicitado los usuarios</p>
@@ -66,9 +80,9 @@
         <a href="pattern/pagos.html">
             <div class="card">
                 <div class="cover__card">
-                    <img src="img/img-executive/metodo-de-pago.png" alt="">
+                    <img class="imgapartado" src="img/img-executive/metodo-de-pago.png" alt="">
                 </div>
-                <h2>Valir pagos</h2>
+                <h2>Validar pagos</h2>
                 <p>Se pueden validar los pagos de un cliente</p>
                 <hr>
                 <div class="footer__card">
@@ -80,9 +94,9 @@
         <a href="pattern/deposito.html">
             <div class="card">
                 <div class="cover__card">
-                    <img src="img/img-executive/depositar.png" alt="">
+                    <img class="imgapartado" src="img/img-executive/depositar.png" alt="">
                 </div>
-                <h2>Valir depositos y retiro de cuenta</h2>
+                <h2>Validar depositos y retiro de cuenta</h2>
                 <p>Se pueden valir los pagos de un cliente</p>
                 <hr>
                 <div class="footer__card">
@@ -92,6 +106,5 @@
             </div>
         </a>
     </div>
-    
 </body>
 </html>

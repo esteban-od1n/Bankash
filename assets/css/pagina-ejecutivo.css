@@ -8,8 +8,8 @@
 }
 
 body{
-    background-color: #005e94;
-    padding-bottom: 500px;
+    background-color: #001f38;
+    padding-bottom: 500px; 
 }
 
 .container__background-triangle{
@@ -32,7 +32,7 @@ body{
 .triangle1{
     width: 250px;
     height: 250px;
-    background: linear-gradient(to left, #0ee66f, rgb(30, 199, 72));
+    background: linear-gradient(to left, #005881, #df0f0f);
     right: 100px;
     top: 100px;
     animation: t1 8s ease infinite;
@@ -41,7 +41,7 @@ body{
 .triangle2{
     width: 200px;
     height: 200px;
-    background: linear-gradient(to left, #ee8105, #c7371e);
+    background: linear-gradient(to left, #005881, #df0f0f);
     top: 450px;
     left: 200px;
     animation: t2 9s ease infinite;
@@ -50,32 +50,32 @@ body{
 .triangle3{
     width: 300px;
     height: 300px;
-    background: linear-gradient(to left, #1b8fc5, #df0f8f);
+    background: linear-gradient(to left, #005881, #df0f0f);
     left: 200px;
     animation: t3 7s ease infinite;
 }
 .triangle4{
     width: 300px;
     height: 300px;
-    background: linear-gradient(to left, #1b8fc5, #df0f8f);
+    background: linear-gradient(to left, #1b8fc5, #df0f0f);
     right: 500px;
     animation: t3 7s ease infinite;
 }
 .triangle5{
     width: 300px;
     height: 300px;
-    background: linear-gradient(to left, #1b8fc5, #df0f8f);
+    background: linear-gradient(to left, #1b8fc5, #df0f0f);
     left: 700px;
     animation: t3 7s ease infinite;
 }
 .triangle6{
     width: 300px;
     height: 300px;
-    background: linear-gradient(to left, #1b8fc5, #df0f8f);
+    background: linear-gradient(to left, #1b8fc5, #df0f0f);
     margin-top: 400px;
     right: 200px;
     animation: t3 7s ease infinite;
-}
+}   
 
 .titulo {
     text-align: center;
@@ -146,7 +146,7 @@ header img {
 
 .container__cards{
     gap: 1em;
-    width:100%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -163,7 +163,7 @@ header img {
 
 .card{
     height: 100%;
-    width: 220px;
+    width: 200px;
     padding: 20px;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     background: rgba(255, 255, 255, 0.1);
@@ -229,13 +229,53 @@ header img {
     font-weight: 500;
 }
 
-@media screen and (max-width:1200px) {
-    .container__cards{
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-        margin-top: 100px;
-        padding-bottom: 100px;
+@media (max-width: 1200px) {
+
+    /* Header */
+
+    .logo {
+        width: 100px;
+        height: 70px;
     }
+
+    .titulo {
+        font-size: 30px;
+        margin-left: -17%;
+        margin-top: 7%;
+    }
+
+    .botones {
+        width: 60px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    /* Cartas */
+
+    .container__cards{
+        margin-top: 520px;
+
+    }
+
+    .card{
+        height: 100%;
+        padding: 10px;
+        width: 365px;
+    }
+
+    .footer__card{
+        display: none;
+    }
+    
+    .footer__card h3{
+        display: none;
+    }
+
+    .imgapartado {
+    height: 200px;
+    padding-left: 110px;
+    margin-left: -60px;
+    }
+
 }
